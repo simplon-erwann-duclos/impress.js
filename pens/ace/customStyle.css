@@ -1,0 +1,46 @@
+#editor { 
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	border: 1px solid black;
+    height: 200px;
+    width: 100%;
+    transition: all 0.50s;
+    margin: 0;
+}
+
+#exec {
+	position: fixed;
+	right: 10px;
+	bottom: 210px;
+	width: 90px;
+	height: 30px;
+	background-color: #d6d6c2;
+	border-radius: 10px;
+	color: #000;
+	border: solid 1px #666;
+	transition: all 0.50s;
+}
+
+#exec:hover {
+	color: orange;
+	background-color: #404040;
+}
+
+#click {
+	position: fixed;
+	right: 10px;
+	bottom: 250px;
+	width: 90px;
+	height: 30px;
+	background-color: #d6d6c2;
+	border-radius: 10px;
+	color: black;
+	border: solid 1px #666;
+	transition: all 0.50s;
+}
+
+#click:hover {
+	color: orange;
+	background-color: #404040;
+}

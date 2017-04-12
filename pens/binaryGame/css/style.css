@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  min-width: 530px;
+  background: #D5D5D5;
+}
+
+.explanation {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.each-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 1%;
+  border: 1px solid black;
+  line-height: 50px;
+  border-radius: 100%;
+  background: white;
+}
+
+.binary-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 1.1%;
+  font-size: 50px;
+  line-height: 50px;
+  border-radius: 100%;
+  margin-bottom: -20px;
+}
+
+.light {
+  transition: 500ms;
+  background: #6D7993;
+  color: white;
+}
+
+#randomizer {
+  padding: 5px 20px;
+}
+
+#output {
+  font-size: 30px;
+  margin-top: 10px;
+}

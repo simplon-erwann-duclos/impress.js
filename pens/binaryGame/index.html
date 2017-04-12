@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Binary-game</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body>
+  <div class="wrap">
+    <div class="explanation">
+      <h3> The Binary Code Game </h3>
+      <h4> A Javascript representation of the game as seen in Harvard's CS50 course. <br><br> First get a number (click the get a number button), then click the circles in order to sum the values  and match the number you got, without going over it. Once you get it right, what you actually see is a binary representation of that number. Clicking the same value twice negates the purpose of the game. </h4>
+    </div>
+
+    <div class="binaries">
+      <p>
+        <div class="binary-number" id="binary-128"> 0 </div>
+        <div class="binary-number" id="binary-64"> 0 </div>
+        <div class="binary-number" id="binary-32"> 0 </div>
+        <div class="binary-number" id="binary-16"> 0 </div>
+        <div class="binary-number" id="binary-8"> 0 </div>
+        <div class="binary-number" id="binary-4"> 0 </div>
+        <div class="binary-number" id="binary-2"> 0 </div>
+        <div class="binary-number" id="binary-1"> 0 </div>
+      </p>
+
+    </div>
+
+    <div class="numbers">
+      <p>
+        <div class="each-number" id="128"> 128 </div>
+        <div class="each-number" id="64"> 64 </div>
+        <div class="each-number" id="32"> 32 </div>
+        <div class="each-number" id="16"> 16 </div>
+        <div class="each-number" id="8"> 8 </div>
+        <div class="each-number" id="4"> 4 </div>
+        <div class="each-number" id="2"> 2</div>
+        <div class="each-number" id="1"> 1 </div>
+      </p>
+    </div>
+
+    <button id="randomizer"> Get a Number </button>
+    <p id="output"> </p>
+    <h3 id="gameResult"> </h3>
+
+  </div>
+</body>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

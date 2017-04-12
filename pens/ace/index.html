@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Let's Code dec2bin</title>
+    <link rel="stylesheet" type="text/css" href="customStyle.css">
+</head>
+
+<body>
+
+    <div style='width:50%; margin : 0 auto'>
+        <input id='Decimal Value' type="number"></input>
+        <div>
+            The decimal value is : <span  id='result'>unknown</span>
+        </div>
+    </div>
+
+
+<!-- Do not modify under this line -->
+<div id="editor">
+        function convertDecimalToBinary(number) {
+            var bitstring ='';
+            while (number > 0 )
+            {
+              bit      = number % 2 ;
+              quotient = number / 2 ;
+              bitstring = bit+bitstring;
+              number = quotient ;
+            }
+            return bitstring;
+        }
+
+
+
+       var result = convertDecimalToBinary(13);
+       document.getElementById('result').innerHTML = result;
+
+</div>
+<input value="Cacher 🢃" id="click" type="button" onclick="affiche()">
+<input value="Exécuter ✔" id="exec" type="button" onclick="executeCode()">
+</body>
+<!-- here link your own js if needed -->
+
+<script src="src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="customScript.js"></script>
+
+</html>

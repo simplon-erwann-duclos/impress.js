@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>TEDx - Loading Binary Game</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Lato&subset=latin'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="loader JS_on">
+	<span class="binary"></span>
+	<span class="binary"></span>
+	<span class="getting-there">LOADING Binary Game...</span>
+</div>
+  
+    <script src="js/index.js"></script>
+
+<script>
+	var seconds = 5,
+        second = 0;
+	var interval = setInterval(function() {
+		
+		if (second >= seconds) {
+		    clearInterval(interval);
+			window.location = window.location+"/../../binaryGame/index.html";
+		}
+
+        second++;
+    }, 1000);
+</script>
+
+</body>
+</html>
