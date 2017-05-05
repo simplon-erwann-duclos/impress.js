@@ -4,16 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Let's Code dec2bin</title>
     <link rel="stylesheet" type="text/css" href="customStyle.css">
+    <link rel="stylesheet" type="text/css" href="install.css">
 </head>
 
 <body>
-
-    <div style='width:50%; margin : 0 auto'>
-        <input id='Decimal Value' type="number"></input>
-        <div>
-            The decimal value is : <span  id='result'>unknown</span>
-        </div>
-    </div>
+<h1>DEC2BIN : The Decimal to Binary Converter</h1>
+  <div>
+      <label>Number to convert : </label><input id='decimalValue' type="number"></input>
+      <hr/>
+      <div>
+          The decimal value is : <span  id='result'>unknown</span>
+      </div>
+  </div>
 
 
 <!-- Do not modify under this line -->
@@ -22,8 +24,8 @@
             var bitstring ='';
             while (number > 0 )
             {
-              bit      = number % 2 ;
-              quotient = number / 2 ;
+              bit      = Math.round(number % 2);
+              quotient = Math.round((number-bit) / 2) ;
               bitstring = bit+bitstring;
               number = quotient ;
             }
@@ -31,8 +33,10 @@
         }
 
 
-
-       var result = convertDecimalToBinary(13);
+       var decval = parseInt(document.getElementById('decimalValue').value) ;
+       console.log("Decimal Value to convert: " + decval);
+       var result = convertDecimalToBinary(decval);
+       console.log("Binary Value : " + result);
        document.getElementById('result').innerHTML = result;
 
 </div>
@@ -44,4 +48,7 @@
 <script src="src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="customScript.js"></script>
 
+<script type="text/javascript">
+       executeCode();
+</script>
 </html>
